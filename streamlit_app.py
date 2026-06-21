@@ -95,6 +95,53 @@ elif menu == "Add Schedule":
 # AI Recommendation
 # -------------------
 
+#elif menu == "AI Recommendation":
+
+    #st.header("AI Recommendation")
+
+    #try:
+
+        #df = pd.read_csv("schedules.csv")
+
+        #schedule_text = df.to_string()
+
+        #if st.button("Generate Plan"):
+
+            #prompt = f"""
+            #You are a university student planner.
+
+            #Based on the following schedule:
+
+            #{schedule_text}
+
+            #Suggest:
+            #1. Priority order
+            #2. Time allocation
+            #3. Productivity advice
+
+            #Keep response short.
+            #"""
+
+            #response = client.chat.completions.create(
+                #model="gpt-4.1-mini",
+                #messages=[
+                    #{
+                        #"role":"user",
+                        #"content":prompt
+                    #}
+                #]
+            #)
+
+            #st.write(
+                #response.choices[0].message.content
+            #)
+
+    #except:
+        #st.warning("Please add schedule first.")
+# -------------------
+# AI Recommendation
+# -------------------
+
 elif menu == "AI Recommendation":
 
     st.header("AI Recommendation")
@@ -138,7 +185,6 @@ elif menu == "AI Recommendation":
 
     except:
         st.warning("Please add schedule first.")
-
 # -------------------
 # Reflection
 # -------------------

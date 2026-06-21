@@ -138,7 +138,7 @@ elif menu == "AI Recommendation":
 
     except:
         st.warning("Please add schedule first.")
-
+st.write(os.getenv("OPENAI_API_KEY"))
 # -------------------
 # Reflection
 # -------------------
